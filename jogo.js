@@ -2,10 +2,11 @@ var altura = 0
 var largura = 0
 var vidas = 1
 var tempo = 15
+
 var criaMosquitoTempo = 1500
 
 var nivel = window.location.search
-alert(nivel.replace('?' , ''))
+alert(nivel.replace('?',''))
 
 if(nivel === 'normal'){
 	//1500 
@@ -17,7 +18,7 @@ else if(nivel === 'dificil') {
 }
 else if(nivel === 'chucknorris') {
 	//7500
-	criaMosquitoTempo = 750
+	criaMosquitoTempo = 300
 }
 
 function ajustaTamanhoPalcoJogo() {
