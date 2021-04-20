@@ -5,20 +5,23 @@ var tempo = 15
 
 var criaMosquitoTempo = 1500
 
-var nivel = window.location.search
-alert(nivel.replace('?',''))
+var nivel = window.location.search.replace('?','')
+
 
 if(nivel === 'normal'){
 	//1500 
+	console.log('entrou no normal')
 	criaMosquitoTempo = 1500
 }
 else if(nivel === 'dificil') {
 	//1000
+	console.log('entrou no dificil')
 	criaMosquitoTempo = 1000
 }
 else if(nivel === 'chucknorris') {
 	//7500
-	criaMosquitoTempo = 300
+	console.log('entrou no chucknorris')
+	criaMosquitoTempo = 750
 }
 
 function ajustaTamanhoPalcoJogo() {
